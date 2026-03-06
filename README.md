@@ -15,6 +15,9 @@ A command-line calculator written in Python that performs multiple arithmetic op
     "10: Greatest Common Divisor (Only first two numbers will be used)"
     "11: Least Common Multiple (Only first two numbers will be used)"
     "12: Factorials (only first number will be used)"
+    "13: Maximum" 
+    "14: Minimum"
+
 
 ## How to Run
 
@@ -40,8 +43,6 @@ python Calculator.py
 - Mode
 - Standard deviation
 - Variance
-- Minimum
-- Maximum
 - Range
 - Bitwise / Computer Science Operations
 - These are common in programmer calculators.

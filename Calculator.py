@@ -16,9 +16,11 @@ while failSafe:
         "10: Greatest Common Divisor (Only first two numbers will be used)\n"
         "11: Least Common Multiple (Only first two numbers will be used)\n"
         "12: Factorials (only first number will be used)\n"
-        "13: Exit\n"
+        "13: Maximum\n" 
+        "14: Minimum\n"
+        "15: Exit\n"
     )
-    if x == "13":
+    if x == "15":
         break
     numbers = list(map(float, input("Enter numbers separated by space: ").split()))
     match x:
@@ -46,5 +48,9 @@ while failSafe:
             print(CalculatorMethods.leastCommonMultiple(numbers))
         case "12":
             print(CalculatorMethods.factorial(numbers))
+        case "13":
+            print(CalculatorMethods.max(numbers))
+        case "14":
+            print(CalculatorMethods.min(numbers))
         case _:
             print("Invalid Input")
