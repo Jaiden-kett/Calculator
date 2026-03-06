@@ -1,12 +1,7 @@
-#from Methods.AdvancedFeaturesMethods import AdvancedFeaturesMethods
 from Methods.BasicArithmeticMethods import BasicArithmeticMethods
-#from Methods.BitewiseAndProgrammerFunctionsMethods import BitewiseAndProgrammerFunctionsMethods
-#from Methods.MemoryFunctionsMethods import MemoryFunctionsMethods
 from Methods.NumberTheoryMethods import NumberTheoryMethods
-#from Methods.NumberUtilitiesMethods import NumberUtilitiesMethods
 from Methods.PowerAndRootsMethods import PowerAndRootsMethods
 from Methods.StatisticsAndDataAnalysisMethods import StatisticsAndDataAnalysisMethods
-#from Methods.TrigonometryAndLogarithmsMethods import TrigonometryAndLogarithmsMethods
 class Calculator:
     while True:
         MAIN_MENU = """
