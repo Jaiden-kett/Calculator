@@ -18,17 +18,9 @@ A command-line calculator written in Python that performs multiple arithmetic op
 python Calculator.py
 
 ## Future Improvements
-- Scientific functions
-- Input validation
-- History of calculations
-- Basic Arithmetic (slightly beyond what you have)
-- Exponent / Power
-- Square
 - Square root
 - Cube root
-- Absolute value
 - Reciprocal (1/x)
-- Modulo / Integer Math
 - Integer division (floor division)
 - Greatest common divisor (GCD)
 - Least common multiple (LCM)
