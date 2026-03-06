@@ -3,12 +3,15 @@
 A command-line calculator written in Python that performs multiple arithmetic operations on a list of numbers.
 
 ## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Remainder
-- Power
+"1: Addition"
+"2: Subtraction"
+"3: Division"
+"4: Multiplication"
+"5: Remainder"
+"6: Power (Only first two numbers will be used)"
+"7: SquareRoot (only first number will be used)"
+"8: CubeRoot (only first number will be used)"
+"9: AbsoluteValue(only first number will be used)"
 
 ## How to Run
 
@@ -18,10 +21,6 @@ A command-line calculator written in Python that performs multiple arithmetic op
 python Calculator.py
 
 ## Future Improvements
-- Square root
-- Cube root
-- Reciprocal (1/x)
-- Integer division (floor division)
 - Greatest common divisor (GCD)
 - Least common multiple (LCM)
 - Factorial
