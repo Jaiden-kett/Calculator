@@ -2,7 +2,6 @@ from CalculatorMethods  import CalculatorMethods
 Calculator = CalculatorMethods
 failSafe = True
 while failSafe:
-
     x = input(
         "What would you like to do?\n"
         "1: Addition\n"
@@ -14,14 +13,14 @@ while failSafe:
         "7: SquareRoot (only first number will be used)\n"
         "8: CubeRoot (only first number will be used)\n"
         "9: AbsoluteValue(only first number will be used)\n"
-        "10: Exit\n"
+        "10: Greatest Common Divisor (Only first two numbers will be used)\n"
+        "11: Least Common Multiple (Only first two numbers will be used)\n"
+        "12: Factorials (only first number will be used)\n"
+        "13: Exit\n"
     )
-
-    if x == "10":
+    if x == "13":
         break
-
     numbers = list(map(float, input("Enter numbers separated by space: ").split()))
-
     match x:
         case "1":
             print(CalculatorMethods.addition(numbers))
@@ -40,6 +39,12 @@ while failSafe:
         case "8":
             print(CalculatorMethods.cubeRoot(numbers))
         case "9":
-            print(CalculatorMethods.abs(numbers[0]))
+            print(CalculatorMethods.abs(numbers))
+        case "10":
+            print(CalculatorMethods.greatestCommonDivisor(numbers))
+        case "11":
+            print(CalculatorMethods.leastCommonMultiple(numbers))
+        case "12":
+            print(CalculatorMethods.factorial(numbers))
         case _:
             print("Invalid Input")

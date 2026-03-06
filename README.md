@@ -3,15 +3,18 @@
 A command-line calculator written in Python that performs multiple arithmetic operations on a list of numbers.
 
 ## Features
-"1: Addition"
-"2: Subtraction"
-"3: Division"
-"4: Multiplication"
-"5: Remainder"
-"6: Power (Only first two numbers will be used)"
-"7: SquareRoot (only first number will be used)"
-"8: CubeRoot (only first number will be used)"
-"9: AbsoluteValue(only first number will be used)"
+    "1: Addition"
+    "2: Subtraction"
+    "3: Division"
+    "4: Multiplication"
+    "5: Remainder"
+    "6: Power (Only first two numbers will be used)"
+    "7: SquareRoot (only first number will be used)"
+    "8: CubeRoot (only first number will be used)"
+    "9: AbsoluteValue(only first number will be used)"
+    "10: Greatest Common Divisor (Only first two numbers will be used)"
+    "11: Least Common Multiple (Only first two numbers will be used)"
+    "12: Factorials (only first number will be used)"
 
 ## How to Run
 
@@ -21,10 +24,6 @@ A command-line calculator written in Python that performs multiple arithmetic op
 python Calculator.py
 
 ## Future Improvements
-- Greatest common divisor (GCD)
-- Least common multiple (LCM)
-- Factorial
-- Scientific Calculator Functions
 - Sine
 - Cosine
 - Tangent
@@ -53,7 +52,6 @@ python Calculator.py
 - Left shift
 - Right shift
 - Memory Functions (Real Calculator Behavior)
-- You could simulate calculator memory.
 - Memory store
 - Memory recall
 - Memory add
