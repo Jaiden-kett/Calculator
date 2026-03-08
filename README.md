@@ -1,3 +1,6 @@
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 # Python Calculator
 
 A command-line calculator written in Python that performs multiple arithmetic operations on a list of numbers.

@@ -1,16 +1,16 @@
 from typing import List
 class StatisticsAndDataAnalysisMethods:
     @staticmethod
-    def max(numbers: List[float]):
-        max = numbers[0]
-        for nums in numbers:
+    def max(nums: List[float]):
+        max = nums[0]
+        for nums in nums:
             if nums > max:
                 max = nums
         return max
     @staticmethod
-    def min(numbers: List[float]):
-        min = numbers[0]
-        for nums in numbers:
+    def min(nums: List[float]):
+        min = nums[0]
+        for nums in nums:
             if nums < min:
                 min = nums
         return min

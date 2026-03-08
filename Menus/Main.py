@@ -1,5 +1,6 @@
-from Menus.BasicArithmeticMenu import BasicArithmeticMenu
-from Methods.GeneralMethods import GeneralMethods
+from Menus.BasicArithmetic import basic_aritmetic_menu
+from Menus.PowersAndRoots import power_and_roos_menu
+from Methods.General import GeneralMethods
 import sys
 MAIN_MENU = """
 What type of Calculator would you like to use?
@@ -15,8 +16,9 @@ What type of Calculator would you like to use?
 |—— 10. Advanced Features (Coming soon)
 |—— 99. Exit
 """
-BASIC_MENU_OPTIONS = {
-    "1": BasicArithmeticMenu.basic_arithmetic_menu
+operations = {
+    "1": basic_aritmetic_menu,
+    "2": power_and_roos_menu
 }
 class MainMenu():
     while True:
@@ -24,9 +26,9 @@ class MainMenu():
         choice = GeneralMethods.get_choice()
         if choice == "99":
             print("Exiting Program...")
-            sys.exit()
-        if choice in BASIC_MENU_OPTIONS:
-            BASIC_MENU_OPTIONS[choice]()
+            break
+        if choice in operations:
+            operations[choice]()
         else:
             print("Invalid Input...")
             

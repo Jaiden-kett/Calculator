@@ -1,15 +1,15 @@
 from typing import List
 class PowerAndRootsMethods:
     @staticmethod
-    def power(numbers: List[float]):
-        total = numbers[0]
-        for i in range(1,int(numbers[1])):
-            total *= numbers[0]
+    def power(nums: List[float]):
+        total = nums[0]
+        for i in range(1,int(nums[1])):
+            total *= nums[0]
         return total
     @staticmethod
-    def squareRoot(numbers: List[float]):
+    def squareRoot(nums: List[float]):
         returnList = []
-        for i in numbers:
+        for i in nums:
             if i < 0:
                 print("Cannot calculate square root of a negative number.")
                 returnList.append(None)
@@ -22,9 +22,9 @@ class PowerAndRootsMethods:
                 returnList.append(int(guess))
         return returnList  
     @staticmethod
-    def cubeRoot(numbers: List[float]):
+    def cubeRoot(nums: List[float]):
         returnList = []
-        for i in numbers:
+        for i in nums:
             guess = i / 3 if i >= 1 else 1
             while PowerAndRootsMethods.abs([guess**3 - i])[0] > 1e-7:
                 guess = (2*guess + i / (guess**2)) / 3
@@ -32,17 +32,17 @@ class PowerAndRootsMethods:
                 returnList.append(int(guess))
         return returnList
     @staticmethod
-    def factorial(numbers: List[float]):
+    def factorial(nums: List[float]):
         returnList = []
-        for i1 in range(0,len(numbers)):
+        for i1 in range(0,len(nums)):
             total = 1
-            for i2 in range(2,int(numbers[i1]+1)):
+            for i2 in range(2,int(nums[i1]+1)):
                 total *= i2
             returnList.append(total)
         return returnList
     @staticmethod
-    def abs(number: List[float]):
+    def abs(nums: List[float]):
         returnList = []
-        for i in number:
+        for i in nums:
             returnList.append(i if i >= 0 else -i)
         return returnList
