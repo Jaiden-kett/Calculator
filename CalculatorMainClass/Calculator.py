@@ -1,32 +1,6 @@
-from Methods.BasicArithmeticMethods import BasicArithmeticMethods
-from Methods.NumberTheoryMethods import NumberTheoryMethods
-from Methods.PowerAndRootsMethods import PowerAndRootsMethods
-from Methods.StatisticsAndDataAnalysisMethods import StatisticsAndDataAnalysisMethods
+from Menus.MainMenu import MainMenu
 class Calculator:
     while True:
-        MAIN_MENU = """
-        What type of Calculator would you like to use?
-        |—— 1. Basic Arithmetic
-        |—— 2. Power & Roots
-        |—— 3. Number Theory
-        |—— 4. Statistics & Data Analysis (In Progress)
-        |—— 5. Trigonometry & Logarithms (Coming soon)
-        |—— 6. Bitwise / Programmer Functions (Coming soon)
-        |—— 7. Memory Functions (Coming soon)
-        |—— 8. Number Utilities (Coming soon)
-        |—— 9. Unit Conversions (Coming soon)
-        |—— 10. Advanced Features (Coming soon)
-        |—— 99. Exit
-        """
-        BASIC_ARITHMETIC_MENU = """
-        What function would you like to use
-        |—— 1: Addition
-        |—— 2: Subtraction
-        |—— 3: Multiplication
-        |—— 4: Division
-        |—— 5: Remainder
-        |—— 99: Back
-        """
         POWERS_AND_ROOTS_MENU = """
         What function would you like to use
         |—— 1: Power
@@ -111,81 +85,4 @@ class Calculator:
         |—— 6: Matrix calculations
         |—— 99: Back
         """
-    
-        print(MAIN_MENU)
-        inputMainMenu = input("Enter choice: ")
-
-        if inputMainMenu == "99":
-            print("Exiting calculator...")
-            break
-
-        match inputMainMenu:
-            case "1":
-                print(BASIC_ARITHMETIC_MENU)
-                inputBasicArithmeticMenu = input("Enter choice: ")
-                if inputBasicArithmeticMenu == "99":
-                    print("Exiting calculator...")
-                    break
-                match inputBasicArithmeticMenu:
-                    case "1":
-                        user_input = input("Enter numbers separated by spaces: ")
-                        numbers = [float(x) for x in user_input.split()]
-                        print(BasicArithmeticMethods.addition(numbers))
-
-            case "2":
-                print(POWERS_AND_ROOTS_MENU)
-                inputPowersAndRootsMenu = input("Enter choice: ")
-                if inputPowersAndRootsMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "3":
-                print(NUMBER_THEORY_MENU)
-                inputNumberTheoryMeny = input("Enter choice: ")
-                if inputNumberTheoryMeny == "99":
-                    print("Exiting calculator...")
-                    break
-            case "4":
-                print(STATISTICS_MENU)
-                inputStatisticsMenu = input("Enter choice: ")
-                if inputStatisticsMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "5":
-                print(TRIGONOMETRY_AND_LOGARITHMS_MENU)
-                inputTrigonometryAndLogarithmsMenu = input("Enter choice: ")
-                if inputTrigonometryAndLogarithmsMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "6":
-                print(BITEWISE_PROGRAMMER_FUNCTIONS_MENU)
-                inputBitewiseProgrammerFunctionsMenu = input("Enter choice: ")
-                if inputBitewiseProgrammerFunctionsMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "7":
-                print(MEMORY_FUNCTIONS_MENU)
-                inputMemoryFunctionsMenu = input("Enter choice: ")
-                if inputMemoryFunctionsMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "8":
-                print(NUMBER_UTILITIES_MENU)
-                inputNumberUtilitiesMenu = input("Enter choice: ")
-                if inputNumberUtilitiesMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "9":
-                print(UNIT_CONVERSIONS_MENU)
-                inputUnitConversionsMenu = input("Enter choice: ")
-                if inputUnitConversionsMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case "10":
-                print(ADVANCED_FEATURES_MENU)
-                inputAdvancedFeaturesMenu = input("Enter choice: ")
-                if inputAdvancedFeaturesMenu == "99":
-                    print("Exiting calculator...")
-                    break
-            case _:
-                print("Invalid input")
-                break
+        MainMenu()

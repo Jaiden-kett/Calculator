@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Calculator",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "CalculatorMainClass.Calculator",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
