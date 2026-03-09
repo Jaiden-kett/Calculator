@@ -1,12 +1,16 @@
 from typing import List
 class NumberTheoryMethods:
     @staticmethod
-    def divisors(number):
-        divisors = []
-        for i in range(1, number + 1):
-            if number % i == 0:
-                divisors.append(i)
-        return divisors
+    def divisors(numbers: List[int]):
+        results = []
+        for n in numbers:
+            divisors = []
+            for i in range(1, int(n)):
+                if n % i == 0:
+                    divisors.append(i)
+            results.append(divisors)
+
+        return results    
     @staticmethod
     def gcdTwoNumbers(a, b):
         while b != 0:

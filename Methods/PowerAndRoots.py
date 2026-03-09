@@ -3,34 +3,15 @@ class PowerAndRootsMethods:
     @staticmethod
     def power(nums: List[float]):
         total = nums[0]
-        for i in range(1,int(nums[1])):
-            total *= nums[0]
-        return total
+        for num in nums[1:]:
+            total = total ** num
+        return total    
     @staticmethod
-    def squareRoot(nums: List[float]):
-        returnList = []
-        for i in nums:
-            if i < 0:
-                print("Cannot calculate square root of a negative number.")
-                returnList.append(None)
-            if i == 0:
-                returnList.append(0)
-            guess = i / 2 if i >= 1 else 1
-            while PowerAndRootsMethods.abs([guess * guess - i])[0] > 1e-7:
-                guess = 0.5 * (guess + i / guess)
-            if PowerAndRootsMethods.abs([guess - int(guess)])[0] < 1e-7:
-                returnList.append(int(guess))
-        return returnList  
+    def square_root(nums: List[float]):
+        return [n ** (1/2) for n in nums]
     @staticmethod
-    def cubeRoot(nums: List[float]):
-        returnList = []
-        for i in nums:
-            guess = i / 3 if i >= 1 else 1
-            while PowerAndRootsMethods.abs([guess**3 - i])[0] > 1e-7:
-                guess = (2*guess + i / (guess**2)) / 3
-            if PowerAndRootsMethods.abs([guess - int(guess)])[0] < 1e-7:
-                returnList.append(int(guess))
-        return returnList
+    def cube_root(nums: List[float]):
+        return [n ** (1/3) for n in nums]    
     @staticmethod
     def factorial(nums: List[float]):
         returnList = []

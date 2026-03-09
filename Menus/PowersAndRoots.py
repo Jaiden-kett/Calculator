@@ -12,12 +12,11 @@ What function would you like to use
 
 operations = {
 "1": PowerAndRootsMethods.power,
-"2": PowerAndRootsMethods.squareRoot,
-"3": PowerAndRootsMethods.cubeRoot,
+"2": PowerAndRootsMethods.square_root,
+"3": PowerAndRootsMethods.cube_root,
 "4": PowerAndRootsMethods.factorial,
 "5": PowerAndRootsMethods.abs,
 }
 
-def power_and_roos_menu():
-    while True:
-        GeneralMethods.menu_functions(MENU, operations)
+def power_and_roots_menu():
+    GeneralMethods.menu_functions(MENU, operations)

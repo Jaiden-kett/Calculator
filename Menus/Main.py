@@ -1,14 +1,15 @@
 from Menus.BasicArithmetic import basic_aritmetic_menu
-from Menus.PowersAndRoots import power_and_roos_menu
+from Menus.PowersAndRoots import power_and_roots_menu
+from Menus.NumberTheory import number_theory_menu
+from Menus.StatisticsAndDataAnalysis import statistics_and_data_analysis_menu
 from Methods.General import GeneralMethods
-import sys
 MAIN_MENU = """
 What type of Calculator would you like to use?
 |—— 1. Basic Arithmetic
 |—— 2. Power & Roots
 |—— 3. Number Theory
-|—— 4. Statistics & Data Analysis (In Progress)
-|—— 5. Trigonometry & Logarithms (Coming soon)
+|—— 4. Statistics & Data Analysis
+|—— 5. Trigonometry & Logarithms (In Progress)
 |—— 6. Bitwise / Programmer Functions (Coming soon)
 |—— 7. Memory Functions (Coming soon)
 |—— 8. Number Utilities (Coming soon)
@@ -18,7 +19,9 @@ What type of Calculator would you like to use?
 """
 operations = {
     "1": basic_aritmetic_menu,
-    "2": power_and_roos_menu
+    "2": power_and_roots_menu,
+    "3": number_theory_menu,
+    "4": statistics_and_data_analysis_menu
 }
 class MainMenu():
     while True:
