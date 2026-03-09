@@ -18,5 +18,6 @@ operations = {
 "5": PowerAndRootsMethods.abs,
 }
 
+@staticmethod
 def power_and_roots_menu():
     GeneralMethods.menu_functions(MENU, operations)

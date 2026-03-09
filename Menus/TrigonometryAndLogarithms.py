@@ -1,4 +1,6 @@
-TRIGONOMETRY_AND_LOGARITHMS_MENU = """
+from Methods.TrigonometryAndLogarithms import TrigonometryAndLogarthmsMethods
+from Methods.General import GeneralMethods
+MENU = """
 What function would you like to use
 |—— 1: Sin
 |—— 2: Cosine
@@ -11,3 +13,12 @@ What function would you like to use
 |—— 6: Exponential (e^x)
 |—— 99: Back
 """
+
+operations = {
+    "1": TrigonometryAndLogarthmsMethods.sin,
+    "2": TrigonometryAndLogarthmsMethods.cos,
+    "3": TrigonometryAndLogarthmsMethods.tan
+}
+@staticmethod
+def trigonometry_and_logarithms_menu():
+    GeneralMethods.menu_functions(MENU, operations)
